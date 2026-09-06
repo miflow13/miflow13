@@ -1,4 +1,3 @@
-
 <h1 id="hi-there-mika-here">Hi there 👋, Mika here.</h1>
 
 <p>
@@ -8,29 +7,22 @@
   </a>
 </p>
 
-<!--
-**miflow13/miflow13** is a ✨ special ✨ repository because its README.md
-appears on my GitHub profile.
--->
-
 <img
   align="right"
-  width="300px"
+  width="350px"
   alt="Busy coding"
   src="https://c.tenor.com/GN73MKBawZYAAAAi/busy-cute.gif"
 />
 
-<h2 id="about-me">
-  <img src="https://media.giphy.com/media/ObNTw8Uzwy6KQ/giphy.gif" width="30px">
-  &nbsp;<em><strong>About me</strong></em>
-</h2>
+<h3 id="about-me">
+  🌟 <em>About me</em>
+</h3>
 
 <p>
   I'm Mika! I like making small apps and tools that solve annoying little
   problems. I'm currently learning software development through building,
   experimenting, breaking things, figuring out why they broke, and trying again.
 </p>
-
 <ul>
   <li>
     <strong>
