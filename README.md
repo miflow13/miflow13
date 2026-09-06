@@ -1,99 +1,37 @@
-# Hi, I'm Mika 👋
+# Hey, I'm Mika 👋
 
-I'm a design-minded builder learning software development by creating tools that solve real problems.
+I like making small apps and tools that solve annoying little problems.
 
-I’m especially interested in:
+I'm still learning a lot of the technical side of software development, so most of my projects are also experiments in figuring out how things work.
 
-* 🐧 Linux and GNOME
-* 🛠️ Desktop utilities
-* 🎨 UI/UX and product design
-* 🌐 Web applications
-* ✍️ Distraction-free creative tools
-* 🎥 Creator and livestreaming tools
-* 🤖 Thoughtful AI-assisted development
+Right now I'm mostly interested in Linux, desktop apps, UI design, web apps, and creator tools.
 
-## What I'm working on
+## Projects
 
 ### KeyFlip
 
-A lightweight GNOME utility that lets laptop users quickly disable and re-enable their internal keyboard while keeping external keyboards active.
+A small GNOME app for quickly disabling and re-enabling your laptop's built-in keyboard while leaving external keyboards alone.
 
-I originally built it because I use an external mechanical keyboard and kept accidentally pressing keys on my laptop keyboard.
+I made it because I use a mechanical keyboard with my laptop and kept accidentally pressing the keyboard underneath it.
 
-What started as a tiny personal fix became my first real Linux application.
+It started as a tiny script and slowly turned into an actual app.
 
 ### LIVE Loop
 
-A web-based companion for livestreamers designed to help maintain momentum during a stream.
+A companion tool for livestreamers.
 
-It surfaces reminders to:
+The idea is simple: while you're streaming, it reminds you to reset the stream, explain what's happening for new viewers, ask chat questions, recap your goal, and keep the stream moving.
 
-* reset the stream for new viewers
-* explain the current objective
-* ask chat questions
-* introduce interaction moments
-* recap what's happening
-* avoid long stretches of dead air
+## What I'm learning
 
-### Writing tools
+* Python
+* Linux
+* GNOME / GTK
+* Git and GitHub
+* UI/UX
+* Web development
+* Packaging Linux apps
 
-I'm also experimenting with distraction-free writing software focused on simplicity, calm interfaces, and helping people actually write instead of endlessly configuring their workspace.
+I use AI tools while I learn and build, especially when I'm stuck or trying to understand something new, but I'm trying to understand more of the code myself with every project.
 
-## How I build
-
-I'm not interested in pretending I know everything.
-
-I'm learning Python, Linux, software engineering, Git, packaging, and application architecture while building projects I genuinely want to use.
-
-I also use AI tools as part of my development workflow for:
-
-* learning unfamiliar concepts
-* debugging
-* exploring implementation ideas
-* reviewing code
-* speeding up repetitive work
-
-I still make the product decisions, test the software, design the experience, and work to understand what I'm building.
-
-My goal is to become increasingly capable of building and maintaining software independently.
-
-## What I care about
-
-I like software that is:
-
-* useful
-* understandable
-* lightweight
-* accessible
-* visually thoughtful
-* respectful of the user
-* built around an actual problem
-
-I especially enjoy small utilities where the reaction is:
-
-> "Why wasn't this already a thing?"
-
-## Currently learning
-
-```text
-Python
-Linux
-GNOME / GTK
-Git & GitHub
-Software architecture
-Packaging & distribution
-UI/UX design
-Web development
-```
-
-## Philosophy
-
-Build something useful.
-
-Understand it better than you did yesterday.
-
-Improve it.
-
-Ship it.
-
-Repeat. 🌱
+Mostly I'm just enjoying making things and seeing where it takes me. 🌱
