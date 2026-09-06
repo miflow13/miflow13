@@ -83,14 +83,6 @@ I'm not trying to hide that.
 
 At the same time, I'm trying to understand more of what I'm building with every project instead of just throwing prompts at a wall until something runs.
 
-The fun part for me is taking an idea from:
-
-> "I wish this existed."
-
-to:
-
-> "oh wait... I can just make it."
-
 ---
 
 ## 📊 GitHub stuff
