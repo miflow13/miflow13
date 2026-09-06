@@ -74,40 +74,8 @@ appears on my GitHub profile.
   </li>
 </ul>
 
-<h2>🛠️ Things I've been building</h2>
-
 <div>
-  <p>
-    <a href="https://github.com/miflow13/KeyFlip">
-      <img
-        src="https://github-readme-stats.vercel.app/api/pin/?username=miflow13&repo=KeyFlip"
-        alt="KeyFlip"
-      >
-    </a>
 
-    <a href="https://github.com/miflow13/mochi-desktop">
-      <img
-        src="https://github-readme-stats.vercel.app/api/pin/?username=miflow13&repo=mochi-desktop"
-        alt="Mochi Desktop"
-      >
-    </a>
-  </p>
-
-  <p>
-    <a href="https://github.com/miflow13/Distraction-Free-Writing-App">
-      <img
-        src="https://github-readme-stats.vercel.app/api/pin/?username=miflow13&repo=Distraction-Free-Writing-App"
-        alt="Distraction Free Writing App"
-      >
-    </a>
-
-    <a href="https://github.com/miflow13/MikasOpenLearningNotebook">
-      <img
-        src="https://github-readme-stats.vercel.app/api/pin/?username=miflow13&repo=MikasOpenLearningNotebook"
-        alt="Mika's Open Learning Notebook"
-      >
-    </a>
-  </p>
 </div>
 
 <h2>👀 My GitHub Stats</h2>
@@ -121,17 +89,6 @@ appears on my GitHub profile.
   </p>
 </div>
 
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=miflow13&show_icons=true&include_all_commits=true"
-    alt="Mika's GitHub Stats"
-  >
-
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=miflow13&layout=compact"
-    alt="Top Languages"
-  >
-</p>
 
 <hr>
 
