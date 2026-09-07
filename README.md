@@ -11,7 +11,7 @@
   align="right"
   width="350px"
   alt="Busy coding"
-  src="https://c.tenor.com/GN73MKBawZYAAAAi/busy-cute.gif"
+  src="https://github.com/user-attachments/assets/08a6b647-9366-49d3-8e15-4d0b237b4d41"
 />
 
 <h3 id="about-me">
