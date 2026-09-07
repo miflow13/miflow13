@@ -6,7 +6,7 @@
 </h4>
 
 <p align="center">
-  <img width="250" src="https://c.tenor.com/GN73MKBawZYAAAAi/busy-cute.gif">
+  <img width="250" src="./busy-cute.gif" alt="Mika coding">
 </p>
 
 <p align="center">
