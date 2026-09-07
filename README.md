@@ -9,9 +9,9 @@
 
 <img
   align="right"
-  width="350px"
+  width="250px"
   alt="Busy coding"
-  src="https://github.com/user-attachments/assets/08a6b647-9366-49d3-8e15-4d0b237b4d41"
+  src="https://github.com/user-attachments/assets/e5cc1ba5-4d8e-40be-8b3a-f71380daac90"
 />
 
 <h3 id="about-me">
