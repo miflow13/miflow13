@@ -1,26 +1,28 @@
-hi, i'm mika 👋
-
-i make small apps and tools that solve annoying little problems.
-currently learning by building, breaking things, and figuring out why they broke.
-
-🌱 **currently working on:**
-
-* Mochi — a cute desktop buddy
-* KeyFlip — a small GNOME utility
-* learning Python, Linux, UI/UX, and software development
-
-📊 **this week i spent my time on:**
-
-<!--START_SECTION:waka-->
-
-```txt
-No activity tracked
-```
-
-<!--END_SECTION:waka-->
-
-📈 **my github stats**
+<h4 align="center">
+  <samp>
+    Hi there 👋🏾 welcome to my GitHub! I'm Mika.  
+    I like building small apps and tools, learning by making things, and occasionally breaking Linux 🐧💻
+  </samp>
+</h4>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=miflow13&show_icons=true&theme=gotham" alt="Mika's GitHub stats" />
+  <img width="250" src="https://c.tenor.com/GN73MKBawZYAAAAi/busy-cute.gif">
+</p>
+
+<p align="center">
+  <samp>
+    Python 🐍 • Linux 🐧 • UI/UX 🎨 • Open Source 🌱
+  </samp>
+</p>
+
+<p align="center">
+  <samp>
+    currently building <strong>Mochi</strong> & <strong>KeyFlip</strong> ✨
+  </samp>
+</p>
+
+<p align="center">
+  <samp>
+    Check out my repos ⬇️
+  </samp>
 </p>
