@@ -1,89 +1,73 @@
-<h1 id="hi-there-mika-here">Hi there 👋, Mika here.</h1>
+<h1>Hi there 👋, Mika here.</h1>
 
 <p>
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=miflow13.miflow13" alt="Visitor">
+  <img
+    src="https://visitor-badge.laobi.icu/badge?page_id=miflow13.miflow13"
+    alt="Profile visitors"
+  />
   <a href="https://github.com/miflow13?tab=followers">
-    <img src="https://img.shields.io/github/followers/miflow13.svg?style=social&label=Follow" alt="GitHub followers">
+    <img
+      src="https://img.shields.io/github/followers/miflow13.svg?style=social&label=Follow"
+      alt="GitHub followers"
+    />
   </a>
 </p>
 
 <img
   align="right"
-  width="250px"
-  alt="Busy coding"
+  width="250"
+  alt="Mika coding"
   src="https://github.com/user-attachments/assets/e5cc1ba5-4d8e-40be-8b3a-f71380daac90"
 />
 
-<h3 id="about-me">
-  🌟 <em>About me</em>
-</h3>
+<h3>🌟 About Me</h3>
 
 <p>
   I'm Mika! I like making small apps and tools that solve annoying little
-  problems. I'm currently learning software development through building,
-  experimenting, breaking things, figuring out why they broke, and trying again.
+  problems.
 </p>
-<ul>
-  <li>
-    <strong>
-      I'm especially interested in Linux, desktop apps, UI/UX, web development,
-      creator tools, and useful software.
-    </strong>
-  </li>
-</ul>
+
+<p>
+  I'm learning software development by <strong>building, experimenting,
+  breaking things, figuring out why they broke, and trying again.</strong>
+</p>
+
+<p>
+  💡 I'm especially interested in <strong>Linux, desktop apps, UI/UX,
+  web development, creator tools, and useful software.</strong>
+</p>
+
+<h3>🌱 Currently Learning</h3>
 
 <ul>
-  <li>
-    🌱 I'm currently learning:
-    <ul>
-      <li>🐍 Python</li>
-      <li>🐧 Linux & Fedora</li>
-      <li>🖥️ GNOME / Linux desktop development</li>
-      <li>🌐 Web development</li>
-      <li>🎨 UI/UX design</li>
-      <li>🛠️ Software engineering fundamentals</li>
-    </ul>
-  </li>
-
-  <li>🔨 I learn best by making things I actually want to use.</li>
-
-  <li>
-    💡 My favorite projects usually start with:
-    <em>"wait... why doesn't this already exist?"</em>
-  </li>
-
-  <li>👯 I'm interested in learning from and contributing to open source.</li>
-
-  <li>
-    🤖 I use AI-assisted development tools while building and learning, but I'm
-    actively working toward understanding the code and becoming a stronger
-    independent developer.
-  </li>
-
-  <li>
-    Outside tech, 📖 I love writing and literature, 🎵 music and music creation,
-    🎨 art and design, 🎮 video games, and exploring new ideas.
-  </li>
+  <li>🐍 Python</li>
+  <li>🐧 Linux & Fedora</li>
+  <li>🖥️ GNOME / Linux desktop development</li>
+  <li>🌐 Web development</li>
+  <li>🎨 UI/UX design</li>
+  <li>🛠️ Software engineering fundamentals</li>
 </ul>
 
-<div>
+<h3>🤖 How I Build</h3>
 
-</div>
+<p>
+  I use AI-assisted development tools while building and learning, while
+  actively working toward understanding the code and becoming a stronger,
+  more independent developer.
+</p>
 
-<h2>👀 My GitHub Stats</h2>
+<h3>✨ Outside of Tech</h3>
 
-<div>
-  <p align="center">
-    <img
-      src="https://github-readme-streak-stats.herokuapp.com/?user=miflow13"
-      alt="GitHub Streak"
-    >
-  </p>
-</div>
+<p>
+  📖 Writing & literature &nbsp;•&nbsp;
+  🎵 Music & music creation &nbsp;•&nbsp;
+  🎨 Art & design &nbsp;•&nbsp;
+  🎮 Video games &nbsp;•&nbsp;
+  💭 Exploring new ideas
+</p>
 
-
-<hr>
+<br clear="right" />
 
 <p align="center">
-  🐧 Build something. Break something. Figure out why. Learn something. 🌱
+  <em>🐧 Build something. Break something. Figure out why. Learn something. 🌱</em>
 </p>
