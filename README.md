@@ -1,73 +1,26 @@
-<h1>Hi there 👋, Mika here.</h1>
+hi, i'm mika 👋
 
-<p>
-  <img
-    src="https://visitor-badge.laobi.icu/badge?page_id=miflow13.miflow13"
-    alt="Profile visitors"
-  />
-  <a href="https://github.com/miflow13?tab=followers">
-    <img
-      src="https://img.shields.io/github/followers/miflow13.svg?style=social&label=Follow"
-      alt="GitHub followers"
-    />
-  </a>
-</p>
+i make small apps and tools that solve annoying little problems.
+currently learning by building, breaking things, and figuring out why they broke.
 
-<img
-  align="right"
-  width="250"
-  alt="Mika coding"
-  src="https://github.com/user-attachments/assets/e5cc1ba5-4d8e-40be-8b3a-f71380daac90"
-/>
+🌱 **currently working on:**
 
-<h3>🌟 About Me</h3>
+* Mochi — a cute desktop buddy
+* KeyFlip — a small GNOME utility
+* learning Python, Linux, UI/UX, and software development
 
-<p>
-  I'm Mika! I like making small apps and tools that solve annoying little
-  problems.
-</p>
+📊 **this week i spent my time on:**
 
-<p>
-  I'm learning software development by <strong>building, experimenting,
-  breaking things, figuring out why they broke, and trying again.</strong>
-</p>
+<!--START_SECTION:waka-->
 
-<p>
-  💡 I'm especially interested in <strong>Linux, desktop apps, UI/UX,
-  web development, creator tools, and useful software.</strong>
-</p>
+```txt
+No activity tracked
+```
 
-<h3>🌱 Currently Learning</h3>
+<!--END_SECTION:waka-->
 
-<ul>
-  <li>🐍 Python</li>
-  <li>🐧 Linux & Fedora</li>
-  <li>🖥️ GNOME / Linux desktop development</li>
-  <li>🌐 Web development</li>
-  <li>🎨 UI/UX design</li>
-  <li>🛠️ Software engineering fundamentals</li>
-</ul>
-
-<h3>🤖 How I Build</h3>
-
-<p>
-  I use AI-assisted development tools while building and learning, while
-  actively working toward understanding the code and becoming a stronger,
-  more independent developer.
-</p>
-
-<h3>✨ Outside of Tech</h3>
-
-<p>
-  📖 Writing & literature &nbsp;•&nbsp;
-  🎵 Music & music creation &nbsp;•&nbsp;
-  🎨 Art & design &nbsp;•&nbsp;
-  🎮 Video games &nbsp;•&nbsp;
-  💭 Exploring new ideas
-</p>
-
-<br clear="right" />
+📈 **my github stats**
 
 <p align="center">
-  <em>🐧 Build something. Break something. Figure out why. Learn something. 🌱</em>
+  <img src="https://github-readme-stats.vercel.app/api?username=miflow13&show_icons=true&theme=gotham" alt="Mika's GitHub stats" />
 </p>
