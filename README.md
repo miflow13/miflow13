@@ -5,9 +5,7 @@
   </samp>
 </h4>
 
-<p align="center">
-  <img width="250" src="./busy-cute.gif" alt="Mika coding">
-</p>
+
 
 <p align="center">
   <samp>
