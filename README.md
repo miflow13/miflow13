@@ -7,7 +7,3 @@
 <p><samp>I like learning by making things — especially projects that solve an oddly specific problem or make the desktop feel a little more alive.</samp></p>
 
 <p><samp><strong>Python 🐍 · Linux 🐧 · GTK4 · GNOME · UI/UX 🎨 · Open Source 🌱</strong></samp></p>
-
-</div>
-
----
