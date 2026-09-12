@@ -6,6 +6,4 @@ I build small software for Linux, mostly with Python, GTK, and whatever else a p
 
 [writing](https://miflow13.github.io/my-blog/) · [learning notebook](https://miflow13.github.io/MikasOpenLearningNotebook/) · [Mochi](https://miflow13.github.io/mochi-desktop/)
 
----
-
 <sub>drink water</sub>
