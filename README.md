@@ -2,7 +2,9 @@
 
 **Software Developer · Python · Full Stack · Linux**
 
-I build practical software that turns real workflows into calmer, safer tools — from production business operations to Linux desktop apps.
+i like to build random things. 
+
+i write [here](https://dev.to/mikachu)
 
 ### what i'm working on
 
