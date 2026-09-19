@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Mika Flowers, a software developer building production web tools and Linux desktop applications." />
+  <meta name="theme-color" content="#151916" />
+  <title>Mika Flowers — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Mika Flowers home">
+      <span class="brand-mark">&gt;_</span>
+      <span>mika flowers</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#work">work</a>
+      <a href="#about">about</a>
+      <a href="#experience">experience</a>
+      <a href="https://github.com/miflow13">github ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">software developer · alexandria, va</p>
+        <h1>I build useful software for <span>real people</span> and real workflows.</h1>
+        <p class="lede">
+          I’m Mika — a software developer working across production web tools and Linux desktop software.
+          I like turning messy problems into calm interfaces, reliable workflows, and maintainable systems.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">See my work</a>
+          <a class="button secondary" href="https://github.com/miflow13">GitHub profile</a>
+        </div>
+      </div>
+
+      <aside class="status-card" aria-label="Current focus">
+        <div class="status-top">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>currently shipping</span>
+        </div>
+        <p class="status-title">Premier Ops</p>
+        <p>
+          An internal operations and inventory workflow for an appliance sales + repair business,
+          built from stakeholder discovery through production handoff.
+        </p>
+        <div class="mini-stack">
+          <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>JavaScript</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section intro-strip" aria-label="Core technologies">
+      <span>Python</span>
+      <span>JavaScript / TypeScript</span>
+      <span>React / Next.js</span>
+      <span>Node.js</span>
+      <span>Linux / GTK</span>
+      <span>FastAPI</span>
+      <span>PostgreSQL</span>
+      <span>Git / GitHub</span>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">selected work</p>
+          <h2>Products, not just exercises.</h2>
+        </div>
+        <p>
+          My strongest projects start with a concrete problem, then keep going through implementation,
+          testing, documentation, packaging, and handoff.
+        </p>
+      </div>
+
+      <article class="project project-featured reveal">
+        <div class="project-copy">
+          <div class="project-meta">
+            <span class="tag">Production · Client work</span>
+            <span class="muted">2026</span>
+          </div>
+          <h3>Premier Ops</h3>
+          <p class="project-lede">
+            Internal software for Premier Appliance Solutions that turns incoming appliance manifests
+            into a structured, multi-device inventory workflow.
+          </p>
+          <ul class="impact-list">
+            <li>Built XLSX/CSV manifest ingestion, product research, pricing, photo enrichment, and editable inventory workflows.</li>
+            <li>Added background-removal tooling, PostgreSQL persistence, recovery/conflict handling, and immutable completed-manifest history.</li>
+            <li>Integrated WooCommerce SKU updates with guarded production writes and mobile-first flows for the actual business user.</li>
+            <li>Added Playwright end-to-end coverage, two-device reliability testing, GitHub Actions CI, Vercel deployment, and handoff documentation.</li>
+          </ul>
+          <div class="stack">
+            <span>Python</span><span>FastAPI</span><span>JavaScript</span><span>PostgreSQL</span>
+            <span>WooCommerce</span><span>Playwright</span><span>GitHub Actions</span><span>Vercel</span>
+          </div>
+          <p class="private-note">Private business repository · case study details available without exposing client internals.</p>
+        </div>
+        <div class="project-visual premier-visual" aria-label="Premier Ops visual">
+          <div class="window-bar"><span></span><span></span><span></span></div>
+          <div class="mock-dashboard">
+            <div class="mock-sidebar">
+              <b>P</b>
+              <i></i><i></i><i></i><i></i>
+            </div>
+            <div class="mock-content">
+              <div class="mock-header"></div>
+              <div class="mock-stats"><i></i><i></i><i></i></div>
+              <div class="mock-table">
+                <i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="card-image image-mochi">
+            <img src="https://github.com/user-attachments/assets/9f3e0ca5-8454-4e22-a3d1-70d7e27c23fe" alt="Mochi desktop companion running on Linux" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="project-meta"><span class="tag">Open source</span><span class="muted">Linux</span></div>
+            <h3>Mochi</h3>
+            <p>
+              A privacy-conscious Linux desktop companion with animation state, tactile interactions,
+              local contextual awareness, GNOME integration, and a growing public alpha.
+            </p>
+            <div class="stack compact">
+              <span>Python</span><span>GTK4</span><span>PyGObject</span><span>Cairo</span><span>Wayland</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/miflow13/mochi-desktop">Repository ↗</a>
+              <a href="https://miflow13.github.io/mochi-desktop/">Project site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-image">
+            <img src="https://github.com/user-attachments/assets/f43d125f-4547-4a41-83c9-76d11ffc778d" alt="KeyFlip GTK desktop application" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="project-meta"><span class="tag">Open source</span><span class="muted">System utility</span></div>
+            <h3>KeyFlip</h3>
+            <p>
+              A GNOME utility that safely disables a laptop’s built-in keyboard while keeping external
+              keyboards available, with automatic switching, cleaning mode, shortcuts, and safety fallbacks.
+            </p>
+            <div class="stack compact">
+              <span>Python</span><span>GTK4</span><span>GNOME Shell</span><span>systemd</span><span>polkit</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/miflow13/KeyFlip">Repository ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-image abstract-sdk" aria-hidden="true">
+            <div class="sdk-orbit"></div>
+            <div class="sdk-core">SDK</div>
+          </div>
+          <div class="card-body">
+            <div class="project-meta"><span class="tag">Architecture</span><span class="muted">Developer tooling</span></div>
+            <h3>Deskling SDK</h3>
+            <p>
+              A reusable SDK extracted from the systems behind Mochi: animation playback, state,
+              interactions, manifests, events, and Linux GTK platform integration for desktop companions.
+            </p>
+            <div class="stack compact">
+              <span>Python</span><span>GTK4</span><span>CLI</span><span>State systems</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/miflow13/Deskling-SDK">Repository ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-image abstract-focus" aria-hidden="true">
+            <div class="focus-ring ring-one"></div>
+            <div class="focus-ring ring-two"></div>
+            <div class="focus-dot"></div>
+          </div>
+          <div class="card-body">
+            <div class="project-meta"><span class="tag">Architecture spike</span><span class="muted">Linux desktop</span></div>
+            <h3>FocusShell</h3>
+            <p>
+              An experimental Linux-native shell for Brain.fm, designed around a provider boundary so
+              the desktop UX remains maintainable and separate from the external service integration.
+            </p>
+            <div class="stack compact">
+              <span>Python</span><span>GTK4</span><span>Libadwaita</span><span>WebKitGTK</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/miflow13/FocusShell">Repository ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">how i work</p>
+          <h2>Curious, product-minded, and very willing to debug the weird thing.</h2>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>
+            I’m especially drawn to software that sits close to people: desktop apps, internal tools,
+            workflow automation, accessible interfaces, and the odd little utility that makes a computer
+            feel better to use.
+          </p>
+          <p>
+            I use AI-assisted development as part of my workflow for exploration, debugging, refactoring,
+            and documentation — while reviewing, testing, modifying, and taking responsibility for what ships.
+          </p>
+        </div>
+        <div class="principles">
+          <div><span>01</span><p><strong>Understand the workflow.</strong><br>Good software starts before the code.</p></div>
+          <div><span>02</span><p><strong>Ship something testable.</strong><br>Small working systems beat giant unfinished ones.</p></div>
+          <div><span>03</span><p><strong>Design for recovery.</strong><br>Errors, stale state, and real humans are part of the system.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">experience</p>
+          <h2>Building, learning, shipping.</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article>
+          <div class="timeline-date">Sep 2026 — present</div>
+          <div>
+            <h3>Software Developer · Premier Appliance Solutions</h3>
+            <p>
+              Building internal business software across inventory, appliance research, pricing,
+              customer workflows, WooCommerce integration, reliability testing, and deployment.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="timeline-date">2022</div>
+          <div>
+            <h3>Software Engineering Training · Catalyte</h3>
+            <p>
+              Intensive development training covering application development, object-oriented programming,
+              web development, databases, debugging, testing, version control, collaboration, and translating
+              requirements into implementation.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="timeline-date">ongoing</div>
+          <div>
+            <h3>Independent & Open-Source Development</h3>
+            <p>
+              Building Linux desktop applications, developer tooling, public documentation, release packaging,
+              technical writing, and a public learning notebook.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section elsewhere">
+      <p class="eyebrow">elsewhere</p>
+      <div class="elsewhere-grid">
+        <a href="https://miflow13.github.io/my-blog/">
+          <span>Writing</span>
+          <small>technical notes + essays ↗</small>
+        </a>
+        <a href="https://miflow13.github.io/MikasOpenLearningNotebook/">
+          <span>Learning notebook</span>
+          <small>what I’m learning in public ↗</small>
+        </a>
+        <a href="https://github.com/miflow13">
+          <span>GitHub</span>
+          <small>code, issues, releases ↗</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <p class="eyebrow">what’s next</p>
+      <h2>I’m looking for a team where I can keep growing by building real things.</h2>
+      <p>
+        I’m interested in software developer and full-stack roles where product thinking, debugging,
+        Linux knowledge, APIs, and practical implementation all matter.
+      </p>
+      <a class="button primary" href="https://github.com/miflow13">Find me on GitHub ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>Built by Mika Flowers.</span>
+    <span>Python brain · Linux heart · ship the thing.</span>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
