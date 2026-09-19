@@ -6,7 +6,6 @@ I build practical software that turns real workflows into calmer, safer tools �
 
 ### what i'm working on
 
-- **Premier Ops** — production internal tooling for Premier Appliance Solutions: manifest ingestion, appliance research, pricing, inventory workflows, PostgreSQL persistence, WooCommerce integration, Playwright testing, CI, and deployment.
 - **[Mochi](https://github.com/miflow13/mochi-desktop)** — a privacy-conscious Linux desktop companion built with Python, GTK4, PyGObject, and Cairo.
 - **[KeyFlip](https://github.com/miflow13/KeyFlip)** — a GNOME utility for safely toggling a laptop's internal keyboard while keeping external keyboards available.
 - **[Deskling SDK](https://github.com/miflow13/Deskling-SDK)** — reusable animation, state, event, interaction, and Linux GTK foundations for desktop companions.
