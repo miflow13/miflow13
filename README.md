@@ -1,4 +1,5 @@
-<h1>
+<h1><img width="64" height="64" alt="mochi_write_loop" src="https://github.com/user-attachments/assets/bd4410b9-2bb6-424a-b719-b99196ea253f" />
+
   hi, i'm mika 👋🏽
   
 </h1>
