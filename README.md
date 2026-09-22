@@ -1,5 +1,11 @@
 <h1>
   hi, i'm mika 👋🏽
+  <img
+    src="https://github.com/user-attachments/assets/4ae6c55b-d96f-43b1-8591-722fcedb601c"
+    width="70"
+    height="70"
+    alt="VS Code"
+  />
   
 </h1>
 
@@ -13,12 +19,7 @@
 <p>i write <a href="https://dev.to/mikachu">here</a></p>
 
 ### toolbox
-<img
-    src="https://github.com/user-attachments/assets/4ae6c55b-d96f-43b1-8591-722fcedb601c"
-    width="70"
-    height="70"
-    alt="VS Code"
-  />
+
   
 `Python` · `JavaScript` · `TypeScript` · `React` · `Next.js` · `Node.js` · `FastAPI` · `PostgreSQL` · `Linux` · `GTK4` · `Git/GitHub` · `Playwright`
 
