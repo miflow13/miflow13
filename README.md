@@ -12,12 +12,6 @@
 
 <p>i write <a href="https://dev.to/mikachu">here</a></p>
 
-### what i'm working on
-
-- **[Mochi](https://github.com/miflow13/mochi-desktop)** — a privacy-conscious Linux desktop companion built with Python, GTK4, PyGObject, and Cairo.
-- **[KeyFlip](https://github.com/miflow13/KeyFlip)** — a GNOME utility for safely toggling a laptop's internal keyboard while keeping external keyboards available.
-- **[Deskling SDK](https://github.com/miflow13/Deskling-SDK)** — reusable animation, state, event, interaction, and Linux GTK foundations for desktop companions.
-
 ### toolbox
 <img
     src="https://github.com/user-attachments/assets/4ae6c55b-d96f-43b1-8591-722fcedb601c"
