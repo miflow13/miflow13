@@ -33,6 +33,6 @@ Intensive training in application development, OOP, web development, databases, 
 
 ### elsewhere
 
-[portfolio source](https://github.com/miflow13/miflow13) · [writing](https://miflow13.github.io/my-blog/) · [learning notebook](https://miflow13.github.io/MikasOpenLearningNotebook/) · [mochi site](https://miflow13.github.io/mochi-desktop/)
+[writing](https://miflow13.github.io/my-blog/) · [learning notebook](https://miflow13.github.io/MikasOpenLearningNotebook/) · [mochi site](https://miflow13.github.io/mochi-desktop/)
 
 <sub>linux, software, art, and things i'm learning · drink water 🌱</sub>
