@@ -1,11 +1,6 @@
 <h1>
   hi, i'm mika 👋🏽
-  <img
-    src="https://github.com/user-attachments/assets/4ae6c55b-d96f-43b1-8591-722fcedb601c"
-    width="70"
-    height="70"
-    alt="VS Code"
-  />
+
   
 </h1>
 
