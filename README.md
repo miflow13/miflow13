@@ -9,9 +9,11 @@
 <p align="right">
  
   i like to build random things.</p>
+
+  techinical writer & contributer [@sinch](https://developers.sinch.com/)
  
 
-<p>i write <a href="https://dev.to/mikachu">here</a></p>
+<p>i write odd stuff <a href="https://dev.to/mikachu">here</a></p>
 
 ### toolbox
 
