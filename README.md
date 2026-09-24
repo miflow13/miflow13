@@ -15,6 +15,9 @@
 
 <p>i write odd stuff <a href="https://dev.to/mikachu">here</a></p>
 
+
+<!-- DEVTO-FOLLOWERS-COUNT:START -->**0** DEV.to followers<!-- DEVTO-FOLLOWERS-COUNT:END -->
+
 ### toolbox
 
   
