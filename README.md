@@ -32,12 +32,6 @@ Writing developer-focused technical content and tutorials.
 **2022**  
 Training in application development, OOP, web development, databases, debugging, testing, version control, and collaborative engineering workflows.
 
-### writing
-
-- [DEV.to](https://dev.to/mikachu)
-- [Open Learning Notebook](https://miflow13.github.io/MikasOpenLearningNotebook/notes/)
-- [Mochi site](https://desklings.io)
-
 ### around the web
 
 - [GitHub](https://github.com/miflow13)
@@ -46,4 +40,4 @@ Training in application development, OOP, web development, databases, debugging,
 
 ---
 
-<sub>linux, software, art, and things i'm learning · drink water 🌱</sub>
+<sub> drink water 🌱</sub>
