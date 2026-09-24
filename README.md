@@ -34,8 +34,7 @@ Training in application development, OOP, web development, databases, debugging,
 
 ### around the web
 
-- [GitHub](https://github.com/miflow13)
-- [LinkedIn](https://www.linkedin.com/in/mika-flowers/)
+- [LinkedIn](https://www.linkedin.com/in/mikaflowers13/)
 - [DEV](https://dev.to/mikachu)
 
 ---
