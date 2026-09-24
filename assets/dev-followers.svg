@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="190"
+  height="32"
+  viewBox="0 0 190 32"
+  role="img"
+  aria-label="DEV followers: 2,115">
+
+  <title>DEV followers: 2,115</title>
+
+  <defs>
+    <linearGradient id="followersGradient" x1="0" x2="1">
+      <stop offset="0%" stop-color="#3b49df"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <clipPath id="roundedBadge">
+      <rect width="190" height="32" rx="7"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#roundedBadge)">
+    <!-- DEV section -->
+    <rect
+      width="56"
+      height="32"
+      fill="#0d0d0d"
+    />
+
+    <!-- Follower count section -->
+    <rect
+      x="56"
+      width="134"
+      height="32"
+      fill="url(#followersGradient)"
+    />
+  </g>
+
+  <!-- DEV text -->
+  <text
+    x="28"
+    y="21"
+    fill="#ffffff"
+    text-anchor="middle"
+    font-family="Verdana, Geneva, sans-serif"
+    font-size="12"
+    font-weight="700"
+  >
+    DEV
+  </text>
+
+  <!-- Followers -->
+  <text
+    x="123"
+    y="21"
+    fill="#ffffff"
+    text-anchor="middle"
+    font-family="Verdana, Geneva, sans-serif"
+    font-size="11"
+  >
+    2,115 followers
+  </text>
+</svg>
