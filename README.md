@@ -25,14 +25,25 @@
 
 ### experience
 
-**Software Developer · Premier Appliance Solutions** — Sep 2026–present  
-Building internal business software across inventory, customer workflows, integrations, reliability testing, and deployment.
+### Technical Writer & Contributor — Sinch
+Writing developer-focused technical content and tutorials.
 
-**Software Engineering Training · Catalyte** — 2022  
-Intensive training in application development, OOP, web development, databases, debugging, testing, version control, and collaborative engineering workflows.
+### Software Engineering Training — Catalyte
+**2022**  
+Training in application development, OOP, web development, databases, debugging, testing, version control, and collaborative engineering workflows.
 
-### elsewhere
+### writing
 
-[writing](https://miflow13.github.io/my-blog/) · [learning notebook](https://miflow13.github.io/MikasOpenLearningNotebook/) · [mochi site](https://miflow13.github.io/mochi-desktop/)
+- [DEV.to](https://dev.to/mikachu)
+- [Open Learning Notebook](https://miflow13.github.io/MikasOpenLearningNotebook/notes/)
+- [Mochi site](https://desklings.io)
+
+### around the web
+
+- [GitHub](https://github.com/miflow13)
+- [LinkedIn](https://www.linkedin.com/in/mika-flowers/)
+- [DEV](https://dev.to/mikachu)
+
+---
 
 <sub>linux, software, art, and things i'm learning · drink water 🌱</sub>
