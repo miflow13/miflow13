@@ -18,8 +18,6 @@
 [![DEV followers](./assets/dev-followers.svg)](https://dev.to/mikachu)
 
 
-<!-- DEVTO-FOLLOWERS-COUNT:START -->**2,115** DEV.to followers<!-- DEVTO-FOLLOWERS-COUNT:END -->
-
 ### toolbox
 
   
