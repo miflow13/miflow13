@@ -70,7 +70,7 @@ v1 requests:
 
 ```text
 GET https://dev.to/api/users/:username
-GET https://dev.to/api/articles?username=:username&state=all&per_page=1000
+GET https://dev.to/api/articles?username=:username&page=:page&per_page=100
 ```
 
 Responses are cached for about 15 minutes at the card endpoint.

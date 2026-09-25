@@ -1,6 +1,26 @@
 const FOREM_API = "https://dev.to/api";
 const ACCEPT = "application/vnd.forem.api-v1+json";
 const USER_AGENT = "forem-readme-card/1.0";
+const FUNCTION_FETCH_BUDGET_MS = 8_500;
+const FETCH_TIMEOUT_MS = 3_000;
+const FETCH_TIMEOUT_FLOOR_MS = 250;
+const FETCH_SAFETY_BUFFER_MS = 150;
+const FOREM_ARTICLES_PER_PAGE = 100;
+const MAX_AVATAR_BYTES = 1_500_000;
+const ALLOWED_AVATAR_HOSTS = new Set([
+  "dev.to",
+  "media.dev.to",
+  "media2.dev.to",
+  "dev-to-uploads.s3.amazonaws.com",
+  "res.cloudinary.com"
+]);
+const ALLOWED_IMAGE_CONTENT_TYPES = new Set([
+  "image/png",
+  "image/jpeg",
+  "image/gif",
+  "image/webp",
+  "image/avif"
+]);
 
 const THEMES = {
   dark: {
@@ -52,30 +72,26 @@ module.exports = async function handler(req, res) {
       Accept: ACCEPT,
       "User-Agent": USER_AGENT
     };
+    const fetchDeadline = Date.now() + FUNCTION_FETCH_BUDGET_MS;
 
-    const [userResponse, articlesResponse] = await Promise.all([
-      fetch(`${FOREM_API}/users/${encodeURIComponent(username)}`, { headers }),
-      fetch(
-        `${FOREM_API}/articles?username=${encodeURIComponent(username)}&state=all&per_page=1000`,
-        { headers }
-      )
+    const [userResponse, articles] = await Promise.all([
+      fetchWithTimeout(`${FOREM_API}/users/${encodeURIComponent(username)}`, { headers }, fetchDeadline),
+      fetchPublishedArticles(username, headers, fetchDeadline)
     ]);
 
     if (userResponse.status === 404) {
       return sendErrorCard(res, theme, `DEV user @${username} was not found`, 404);
     }
 
-    if (!userResponse.ok || !articlesResponse.ok) {
+    if (!userResponse.ok) {
       throw new Error(
-        `Forem request failed: user=${userResponse.status}, articles=${articlesResponse.status}`
+        `Forem request failed: user=${userResponse.status}`
       );
     }
 
     const user = await userResponse.json();
-    const articles = await articlesResponse.json();
-
-    const stats = aggregateArticles(Array.isArray(articles) ? articles : []);
-    const avatarDataUri = await fetchImageDataUri(user.profile_image);
+    const stats = aggregateArticles(articles);
+    const avatarDataUri = await fetchImageDataUri(user.profile_image, fetchDeadline);
 
     const svg = renderCard({
       user,
@@ -115,7 +131,9 @@ function aggregateArticles(articles) {
   const tagCounts = new Map();
 
   for (const article of articles) {
-    reactions += Number(article.public_reactions_count || 0);
+    reactions += Number(
+      article.positive_reactions_count ?? article.public_reactions_count ?? 0
+    );
     comments += Number(article.comments_count || 0);
     readingMinutes += Number(article.reading_time_minutes || 0);
 
@@ -146,26 +164,128 @@ function aggregateArticles(articles) {
   };
 }
 
-async function fetchImageDataUri(url) {
-  if (!url || typeof url !== "string" || !url.startsWith("https://")) return null;
+async function fetchImageDataUri(url, deadline) {
+  if (!url || typeof url !== "string") return null;
+
+  const parsed = parseAvatarUrl(url);
+  if (!parsed) return null;
 
   try {
-    const response = await fetch(url, {
+    const response = await fetchWithTimeout(parsed.toString(), {
       headers: { "User-Agent": USER_AGENT }
-    });
+    }, deadline);
 
     if (!response.ok) return null;
 
-    const contentType = response.headers.get("content-type") || "image/png";
-    if (!contentType.startsWith("image/")) return null;
+    const contentType = normalizeImageContentType(response.headers.get("content-type"));
+    if (!contentType) return null;
 
-    const buffer = Buffer.from(await response.arrayBuffer());
-    if (buffer.length > 1_500_000) return null;
+    const contentLength = Number(response.headers.get("content-length"));
+    if (Number.isFinite(contentLength) && contentLength > MAX_AVATAR_BYTES) return null;
 
+    const buffer = await readResponseBuffer(response, MAX_AVATAR_BYTES);
     return `data:${contentType};base64,${buffer.toString("base64")}`;
   } catch {
     return null;
   }
+}
+
+async function fetchPublishedArticles(username, headers, deadline) {
+  const allArticles = [];
+
+  for (let page = 1; ; page += 1) {
+    const response = await fetchWithTimeout(
+      `${FOREM_API}/articles?username=${encodeURIComponent(username)}&page=${page}&per_page=${FOREM_ARTICLES_PER_PAGE}`,
+      { headers },
+      deadline
+    );
+
+    if (!response.ok) {
+      throw new Error(`Forem request failed: articles=${response.status}, page=${page}`);
+    }
+
+    const pageArticles = await response.json();
+    if (!Array.isArray(pageArticles)) break;
+
+    allArticles.push(...pageArticles);
+
+    if (pageArticles.length < FOREM_ARTICLES_PER_PAGE) break;
+    if (remainingMs(deadline) <= FETCH_TIMEOUT_FLOOR_MS) {
+      throw new Error("Forem request failed: insufficient time budget for article pagination");
+    }
+  }
+
+  return allArticles;
+}
+
+function parseAvatarUrl(url) {
+  let parsed;
+  try {
+    parsed = new URL(url);
+  } catch {
+    return null;
+  }
+
+  if (parsed.protocol !== "https:") return null;
+  if (!ALLOWED_AVATAR_HOSTS.has(parsed.hostname.toLowerCase())) return null;
+  return parsed;
+}
+
+function normalizeImageContentType(value) {
+  const [rawType] = String(value || "")
+    .toLowerCase()
+    .split(";", 1);
+  const contentType = rawType.trim();
+  if (!ALLOWED_IMAGE_CONTENT_TYPES.has(contentType)) return null;
+  return contentType;
+}
+
+async function readResponseBuffer(response, maxBytes) {
+  if (!response.body) {
+    const buffer = Buffer.from(await response.arrayBuffer());
+    if (buffer.length > maxBytes) throw new Error("Image too large");
+    return buffer;
+  }
+
+  const reader = response.body.getReader();
+  const chunks = [];
+  let total = 0;
+
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    if (!value) continue;
+
+    total += value.length;
+    if (total > maxBytes) {
+      await reader.cancel();
+      throw new Error("Image too large");
+    }
+
+    chunks.push(Buffer.from(value));
+  }
+
+  return Buffer.concat(chunks);
+}
+
+async function fetchWithTimeout(url, options, deadline) {
+  const timeout = Math.min(FETCH_TIMEOUT_MS, Math.max(FETCH_TIMEOUT_FLOOR_MS, remainingMs(deadline) - FETCH_SAFETY_BUFFER_MS));
+  if (timeout <= 0) {
+    throw new Error("Forem request failed: no remaining time budget");
+  }
+
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeout);
+
+  try {
+    return await fetch(url, { ...options, signal: controller.signal });
+  } finally {
+    clearTimeout(timeoutId);
+  }
+}
+
+function remainingMs(deadline) {
+  return deadline - Date.now();
 }
 
 function renderCard({ user, username, stats, avatarDataUri, theme, themeName }) {
