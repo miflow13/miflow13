@@ -324,16 +324,16 @@ function renderCard({ user, username, stats, avatarDataUri, theme, themeName }) 
 
   const tagsSvg = renderTags(topTags, theme);
   const avatar = avatarDataUri
-    ? `<image href="${avatarDataUri}" x="34" y="34" width="116" height="116" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatarClip)"/>`
-    : `<circle cx="92" cy="92" r="58" fill="url(#avatarGradient)"/>
-       <text x="92" y="108" text-anchor="middle" font-size="48" font-weight="700" fill="#ffffff">${escapeXml(
+    ? `<image href="${avatarDataUri}" x="40" y="34" width="108" height="108" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatarClip)"/>`
+    : `<circle cx="94" cy="88" r="54" fill="url(#avatarGradient)"/>
+       <text x="94" y="104" text-anchor="middle" font-size="48" font-weight="700" fill="#ffffff">${escapeXml(
          (user.name || username).slice(0, 1).toUpperCase()
        )}</text>`;
 
   const meta = [location, joined].filter(Boolean).join("  •  ");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="280" viewBox="0 0 800 280" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="310" viewBox="0 0 800 310" role="img" aria-labelledby="title desc">
   <title id="title">${name}'s DEV Community profile card</title>
   <desc id="desc">${stats.posts} posts, ${stats.reactions} reactions, ${stats.comments} comments, and ${stats.readingMinutes} minutes of published reading time.</desc>
   <defs>
@@ -348,52 +348,52 @@ function renderCard({ user, username, stats, avatarDataUri, theme, themeName }) 
     <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
       <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="${themeName === "dark" ? "0.28" : "0.12"}"/>
     </filter>
-    <clipPath id="avatarClip"><circle cx="92" cy="92" r="58"/></clipPath>
+    <clipPath id="avatarClip"><circle cx="94" cy="88" r="54"/></clipPath>
   </defs>
 
-  <rect x="1" y="1" width="798" height="278" rx="20" fill="url(#bgGradient)" stroke="${theme.border}" filter="url(#shadow)"/>
+  <rect x="1" y="1" width="798" height="308" rx="20" fill="url(#bgGradient)" stroke="${theme.border}" filter="url(#shadow)"/>
 
-  <circle cx="92" cy="92" r="62" fill="none" stroke="${theme.accent}" stroke-width="3" opacity="0.9"/>
+  <circle cx="94" cy="88" r="58" fill="none" stroke="${theme.accent}" stroke-width="3" opacity="0.9"/>
   ${avatar}
 
-  <text x="178" y="52" fill="${theme.text}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="27" font-weight="700">${name}</text>
-  <text x="178" y="78" fill="${theme.muted}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="16" font-weight="600">${handle}</text>
+  <text x="170" y="48" fill="${theme.text}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="27" font-weight="700">${name}</text>
+  <text x="170" y="72" fill="${theme.muted}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="16" font-weight="600">${handle}</text>
 
-  <rect x="640" y="30" width="126" height="38" rx="12" fill="${theme.panel}" stroke="${theme.border}"/>
-  <rect x="653" y="40" width="34" height="19" rx="3" fill="${theme.text}"/>
-  <text x="670" y="54" text-anchor="middle" fill="${theme.bg}" font-family="Arial,sans-serif" font-size="10" font-weight="800">DEV</text>
-  <text x="698" y="54" fill="${theme.text}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="12" font-weight="600">Community</text>
+  <rect x="650" y="28" width="116" height="36" rx="12" fill="${theme.panel}" stroke="${theme.border}"/>
+  <rect x="662" y="37" width="32" height="18" rx="3" fill="${theme.text}"/>
+  <text x="678" y="50" text-anchor="middle" fill="${theme.bg}" font-family="Arial,sans-serif" font-size="10" font-weight="800">DEV</text>
+  <text x="704" y="50" fill="${theme.text}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="12" font-weight="600">Community</text>
 
-  <text x="178" y="111" fill="${theme.text}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="15">${summary}</text>
-  ${meta ? `<text x="178" y="137" fill="${theme.muted}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="12">${meta}</text>` : ""}
+  <text x="170" y="106" fill="${theme.text}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="15">${summary}</text>
+  ${meta ? `<text x="170" y="132" fill="${theme.muted}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="12">${meta}</text>` : ""}
 
-  ${statCard(178, 157, "Posts", formatNumber(stats.posts), theme.blue, theme)}
-  ${statCard(326, 157, "Reactions", formatNumber(stats.reactions), theme.pink, theme)}
-  ${statCard(474, 157, "Comments", formatNumber(stats.comments), theme.green, theme)}
-  ${statCard(622, 157, "Read min", formatNumber(stats.readingMinutes), theme.orange, theme)}
+  ${statCard(32, 162, "Posts", formatNumber(stats.posts), theme.blue, theme)}
+  ${statCard(218, 162, "Reactions", formatNumber(stats.reactions), theme.pink, theme)}
+  ${statCard(404, 162, "Comments", formatNumber(stats.comments), theme.green, theme)}
+  ${statCard(590, 162, "Read min", formatNumber(stats.readingMinutes), theme.orange, theme)}
 
-  <text x="34" y="210" fill="${theme.muted}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="12" font-weight="700">TOP TAGS</text>
+  <text x="32" y="240" fill="${theme.muted}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="12" font-weight="700">TOP TAGS</text>
   ${tagsSvg}
 
-  <line x1="34" y1="242" x2="766" y2="242" stroke="${theme.border}"/>
-  <text x="34" y="264" fill="${theme.muted}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="11">Live stats from the Forem API • refreshes every ~15 min</text>
+  <line x1="34" y1="274" x2="768" y2="274" stroke="${theme.border}"/>
+  <text x="32" y="295" fill="${theme.muted}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="11">Live stats from the Forem API • refreshes every ~15 min</text>
   <a href="${profileUrl}" target="_blank">
-    <text x="766" y="264" text-anchor="end" fill="${theme.accent}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="12" font-weight="700">dev.to/${escapeXml(username)} ↗</text>
+    <text x="768" y="295" text-anchor="end" fill="${theme.accent}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="12" font-weight="700">dev.to/${escapeXml(username)} ↗</text>
   </a>
 </svg>`;
 }
 
 function statCard(x, y, label, value, accent, theme) {
   return `
-  <rect x="${x}" y="${y}" width="136" height="44" rx="11" fill="${theme.panel}" stroke="${theme.border}"/>
-  <circle cx="${x + 18}" cy="${y + 22}" r="6" fill="${accent}"/>
-  <text x="${x + 32}" y="${y + 20}" fill="${theme.text}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="15" font-weight="700">${escapeXml(value)}</text>
-  <text x="${x + 32}" y="${y + 35}" fill="${theme.muted}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="10">${escapeXml(label)}</text>`;
+  <rect x="${x}" y="${y}" width="178" height="50" rx="12" fill="${theme.panel}" stroke="${theme.border}"/>
+  <circle cx="${x + 18}" cy="${y + 25}" r="6" fill="${accent}"/>
+  <text x="${x + 34}" y="${y + 22}" fill="${theme.text}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="15" font-weight="700">${escapeXml(value)}</text>
+  <text x="${x + 34}" y="${y + 39}" fill="${theme.muted}" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif" font-size="10">${escapeXml(label)}</text>`;
 }
 
 function renderTags(tags, theme) {
   let x = 105;
-  const y = 196;
+  const y = 224;
   let output = "";
 
   for (const rawTag of tags.slice(0, 5)) {
