@@ -194,6 +194,10 @@ async function fetchPublishedArticles(username, headers, deadline) {
   const allArticles = [];
 
   for (let page = 1; ; page += 1) {
+    if (remainingMs(deadline) <= FETCH_TIMEOUT_FLOOR_MS) {
+      throw new Error("Forem request failed: insufficient time budget for article pagination");
+    }
+
     const response = await fetchWithTimeout(
       `${FOREM_API}/articles?username=${encodeURIComponent(username)}&page=${page}&per_page=${FOREM_ARTICLES_PER_PAGE}`,
       { headers },
@@ -210,9 +214,6 @@ async function fetchPublishedArticles(username, headers, deadline) {
     allArticles.push(...pageArticles);
 
     if (pageArticles.length < FOREM_ARTICLES_PER_PAGE) break;
-    if (remainingMs(deadline) <= FETCH_TIMEOUT_FLOOR_MS) {
-      throw new Error("Forem request failed: insufficient time budget for article pagination");
-    }
   }
 
   return allArticles;
