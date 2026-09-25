@@ -1,0 +1,10 @@
+{
+  "name": "forem-readme-card",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Live DEV Community profile cards for GitHub READMEs, powered by the Forem API.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
