@@ -1,3 +1,4 @@
+
 <h1>
   hi, i'm mika 👋🏽
 
@@ -5,7 +6,7 @@
 </h1>
 
 <strong>Software Developer · Python · Full Stack · Linux</strong>
-
+[![Mika's DEV profile](https://miflow13.vercel.app/api/card?username=mikachu)](https://dev.to/mikachu)
 <p align="right">
  
   i like to build random things.</p>
@@ -17,7 +18,7 @@
 
 [![DEV followers](./assets/dev-followers.svg)](https://dev.to/mikachu)
 
-[![Mika's DEV profile](https://miflow13.vercel.app/api/card?username=mikachu)](https://dev.to/mikachu)
+
 ### toolbox
 
   
