@@ -5,8 +5,7 @@
   
 </h1>
 
-<strong>Software Developer · Python · Full Stack · Linux</strong>
-[![Mika's DEV profile](https://miflow13.vercel.app/api/card?username=mikachu)](https://dev.to/mikachu)
+<strong>Software Developer · Python · Full Stack · Linux
 <p align="right">
  
   i like to build random things.</p>
