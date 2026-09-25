@@ -75,7 +75,7 @@ module.exports = async function handler(req, res) {
     const fetchDeadline = Date.now() + FUNCTION_FETCH_BUDGET_MS;
 
     const [userResponse, articles] = await Promise.all([
-      fetchWithTimeout(`${FOREM_API}/users/${encodeURIComponent(username)}`, { headers }, fetchDeadline),
+      fetchUserByUsername(username, headers, fetchDeadline),
       fetchPublishedArticles(username, headers, fetchDeadline)
     ]);
 
@@ -188,6 +188,24 @@ async function fetchImageDataUri(url, deadline) {
   } catch {
     return null;
   }
+}
+
+async function fetchUserByUsername(username, headers, deadline) {
+  const encoded = encodeURIComponent(username);
+
+  const direct = await fetchWithTimeout(
+    `${FOREM_API}/users/${encoded}`,
+    { headers },
+    deadline
+  );
+
+  if (direct.status !== 404) return direct;
+
+  return fetchWithTimeout(
+    `${FOREM_API}/users/by_username?url=${encoded}`,
+    { headers },
+    deadline
+  );
 }
 
 async function fetchPublishedArticles(username, headers, deadline) {
