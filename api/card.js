@@ -59,7 +59,7 @@ module.exports = async function handler(req, res) {
     return res.status(405).send("Method not allowed");
   }
 
-  const username = normalizeUsername(req.query.username || "miflow13");
+  const username = normalizeUsername(req.query.username || "mikachu");
   const themeName = req.query.theme === "light" ? "light" : "dark";
   const theme = THEMES[themeName];
 

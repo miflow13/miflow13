@@ -20,13 +20,13 @@ The card uses the public [Forem API](https://developers.forem.com/api/v1) and re
 ## Endpoint
 
 ```text
-/api/card?username=miflow13
+/api/card?username=mikachu
 ```
 
 Optional theme:
 
 ```text
-/api/card?username=miflow13&theme=light
+/api/card?username=mikachu&theme=light
 ```
 
 ## GitHub README usage
@@ -34,16 +34,16 @@ Optional theme:
 After deployment:
 
 ```md
-[![Mika's DEV profile](https://YOUR-DEPLOYMENT.vercel.app/api/card?username=miflow13)](https://dev.to/miflow13)
+[![Mika's DEV profile](https://YOUR-DEPLOYMENT.vercel.app/api/card?username=mikachu)](https://dev.to/mikachu)
 ```
 
 Or centered:
 
 ```html
 <p align="center">
-  <a href="https://dev.to/miflow13">
+  <a href="https://dev.to/mikachu">
     <img
-      src="https://YOUR-DEPLOYMENT.vercel.app/api/card?username=miflow13"
+      src="https://YOUR-DEPLOYMENT.vercel.app/api/card?username=mikachu"
       alt="Mika Flowers on DEV Community"
       width="800"
     />
@@ -60,7 +60,7 @@ When deploying from this repository:
 1. Import the repository into Vercel.
 2. Set **Root Directory** to `forem-card`.
 3. Deploy.
-4. Open `/api/card?username=miflow13`.
+4. Open `/api/card?username=mikachu`.
 
 No environment variables are required.
 
