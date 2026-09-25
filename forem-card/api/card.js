@@ -269,10 +269,11 @@ async function readResponseBuffer(response, maxBytes) {
 }
 
 async function fetchWithTimeout(url, options, deadline) {
-  const timeout = Math.min(FETCH_TIMEOUT_MS, Math.max(FETCH_TIMEOUT_FLOOR_MS, remainingMs(deadline) - FETCH_SAFETY_BUFFER_MS));
-  if (timeout <= 0) {
+  const remaining = remainingMs(deadline) - FETCH_SAFETY_BUFFER_MS;
+  if (remaining <= 0) {
     throw new Error("Forem request failed: no remaining time budget");
   }
+  const timeout = Math.min(FETCH_TIMEOUT_MS, remaining);
 
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), timeout);
