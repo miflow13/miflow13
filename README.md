@@ -22,10 +22,10 @@
 
 ### experience
 
-### Technical Writer & Contributor — Sinch
+#### Technical Writer & Contributor — Sinch
 Writing developer-focused technical content and tutorials.
 
-### Software Engineering Training — Catalyte
+#### Software Engineering Training — Catalyte
 **2022**  
 Training in application development, OOP, web development, databases, debugging, testing, version control, and collaborative engineering workflows.
 
