@@ -15,12 +15,12 @@
 
 <p>i write odd stuff <a href="https://dev.to/mikachu">here</a></p>
 
-### toolbox
+## toolbox
 
   
 `Python` · `JavaScript` · `TypeScript` · `React` · `Next.js` · `Node.js` · `FastAPI` · `PostgreSQL` · `Linux` · `GTK4` · `Git/GitHub` · `Playwright`
 
-### experience
+## experience
 
 #### Technical Writer & Contributor — Sinch
 Writing developer-focused technical content and tutorials.
@@ -29,7 +29,7 @@ Writing developer-focused technical content and tutorials.
 **2022**  
 Training in application development, OOP, web development, databases, debugging, testing, version control, and collaborative engineering workflows.
 
-### around the web
+## around the web
 
 - [LinkedIn](https://www.linkedin.com/in/mikaflowers13/)
 - [DEV](https://dev.to/mikachu)
