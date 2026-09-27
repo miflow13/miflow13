@@ -1,8 +1,8 @@
 
 <h1>
   hi, i'm mika 👋🏽
-
   
+
 </h1>
 
 <strong>Software Developer · Python · Full Stack · Linux
@@ -15,10 +15,12 @@
 
 <p>i write odd stuff <a href="https://dev.to/mikachu">here</a></p>
 
-## toolbox
 
+## toolbox
   
 `Python` · `JavaScript` · `TypeScript` · `React` · `Next.js` · `Node.js` · `FastAPI` · `PostgreSQL` · `Linux` · `GTK4` · `Git/GitHub` · `Playwright`
+
+[![Mika's Github Stats](https://github-readme-stats-fast.vercel.app/api?username=miflow13)](https://github.com/pranesh-2005/github-readme-stats-fast)
 
 ## experience
 
