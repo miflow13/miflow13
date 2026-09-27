@@ -1,42 +1,61 @@
-
-<h1>
-  hi, i'm mika 👋🏽
-  
-
+<h1 align="center">
+  Hi, I'm Mika 👋🏽
 </h1>
 
-<strong>Software Developer · Python · Full Stack · Linux
-<p align="right">
- 
-  i like to build random things.</p>
+<p align="center">
+  <strong>Software Developer · Python · Full Stack · Linux</strong>
+</p>
 
-  techinical writer & contributer [@sinch](https://developers.sinch.com/)
- 
+<p align="center">
+  I like to build random things.
+</p>
 
-<p>i write odd stuff <a href="https://dev.to/mikachu">here</a></p>
+<p align="center">
+  Technical writer and contributor at
+  <a href="https://developers.sinch.com/">Sinch</a>
+</p>
 
-![My GitHub Game](game.gif)
+<p align="center">
+  I write odd stuff
+  <a href="https://dev.to/mikachu">here</a>.
+</p>
 
-## toolbox
-  
+<p align="center">
+  <img src="game.gif" alt="My GitHub Game">
+</p>
+
+## Toolbox
+
 `Python` · `JavaScript` · `TypeScript` · `React` · `Next.js` · `Node.js` · `FastAPI` · `PostgreSQL` · `Linux` · `GTK4` · `Git/GitHub` · `Playwright`
 
-[![Mika's Github Stats](https://github-readme-stats-fast.vercel.app/api?username=miflow13)](https://github.com/pranesh-2005/github-readme-stats-fast)
+<p align="center">
+  <a href="https://github.com/pranesh-2005/github-readme-stats-fast">
+    <img
+      src="https://github-readme-stats-fast.vercel.app/api?username=miflow13"
+      alt="Mika's GitHub Stats"
+    >
+  </a>
+</p>
 
-## experience
+## Experience
 
-#### Technical Writer & Contributor — Sinch
+### Technical Writer & Contributor — Sinch
+
 Writing developer-focused technical content and tutorials.
 
-#### Software Engineering Training — Catalyte
-**2022**  
-Training in application development, OOP, web development, databases, debugging, testing, version control, and collaborative engineering workflows.
+### Software Engineering Training — Catalyte
 
-## around the web
+**2022**
+
+Training in application development, object-oriented programming, web development, databases, debugging, testing, version control, and collaborative engineering workflows.
+
+## Around the Web
 
 - [LinkedIn](https://www.linkedin.com/in/mikaflowers13/)
 - [DEV](https://dev.to/mikachu)
 
 ---
 
-<sub> drink water 🌱</sub>
+<p align="center">
+  <sub>Drink water 🌱</sub>
+</p>
