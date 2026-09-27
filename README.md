@@ -15,6 +15,7 @@
 
 <p>i write odd stuff <a href="https://dev.to/mikachu">here</a></p>
 
+![My GitHub Game](game.gif)
 
 ## toolbox
   
