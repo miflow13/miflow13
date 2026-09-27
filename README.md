@@ -2,6 +2,8 @@
   Hi, I'm Mika 👋🏽
 </h1>
 
+
+
 <p align="center">
   <strong>Software Developer · Python · Full Stack · Linux</strong>
 </p>
@@ -9,6 +11,8 @@
 <p align="center">
   I like to build random things.
 </p>
+
+
 
 <p align="center">
   Technical writer and contributor at
@@ -21,6 +25,16 @@
 </p>
 
 <p align="center">
+  <a href="https://dev.to/mikachu">
+    <img
+      src="https://miflow13.vercel.app/api/card?username=mikachu"
+      alt="Mika Flowers on DEV Community"
+      width="800"
+    />
+  </a>
+</p>
+
+<p align="center">
   <img src="game.gif" alt="My GitHub Game">
 </p>
 
@@ -28,28 +42,6 @@
 
 `Python` · `JavaScript` · `TypeScript` · `React` · `Next.js` · `Node.js` · `FastAPI` · `PostgreSQL` · `Linux` · `GTK4` · `Git/GitHub` · `Playwright`
 
-
-  <tr>
-    <td align="center" valign="top">
-      <a href="https://github.com/pranesh-2005/github-readme-stats-fast">
-        <img
-          src="https://github-readme-stats-fast.vercel.app/api?username=miflow13"
-          alt="Mika's GitHub Stats"
-          width="420"
-        >
-      </a>
-    </td>
-    <td align="center" valign="top">
-      <a href="https://dev.to/mikachu">
-        <img
-          src="https://miflow13.vercel.app/api/card?username=mikachu"
-          alt="Mika's DEV Community profile"
-          width="520"
-        >
-      </a>
-    </td>
-  </tr>
-</table>
 
 ## Experience
 
