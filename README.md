@@ -39,19 +39,19 @@ I write odd stuff [here](https://dev.to/mikachu) ✍️
 
 <div align="center">
 
-<a href="https://github.com/pranesh-2005/github-readme-stats-fast">
+<!--<a href="https://github.com/pranesh-2005/github-readme-stats-fast">
   <img
     src="https://github-readme-stats-fast.vercel.app/api?username=miflow13"
     alt="Mika's GitHub Stats"
     width="520"
   >
 </a>
-
+-->
 </div>
 
 <br>
 
-## 💼 Experience
+## experience
 
 **Technical Writer & Contributor** — [Sinch](https://developers.sinch.com/)
 Writing developer-focused technical content and tutorials.
