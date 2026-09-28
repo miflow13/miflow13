@@ -7,6 +7,7 @@
 I like to build random things.
 
 Technical writer and contributor at [Sinch](https://developers.sinch.com/)
+
 I write odd stuff [here](https://dev.to/mikachu) ✍️
 
 <img src="game.gif" alt="My GitHub Game" width="480">
