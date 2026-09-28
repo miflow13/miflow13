@@ -61,11 +61,12 @@ Training in application development, object-oriented programming, web developmen
 
 <br>
 
-## 🌐 Around the Web
+## around the web
 
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mikaflowers13/)
+
 [![DEV](https://img.shields.io/badge/DEV.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/mikachu)
 
 </div>
