@@ -136,9 +136,3 @@ Application development, object-oriented programming, web development, databases
 ![API/SDK Docs](https://img.shields.io/badge/API%20%2F%20SDK%20Docs-4B5563?style=flat-square)
 ![Tutorials](https://img.shields.io/badge/Tutorials-4B5563?style=flat-square)
 ![Troubleshooting Guides](https://img.shields.io/badge/Troubleshooting%20Guides-4B5563?style=flat-square)
-
----
-
-<p align="center">
-  <em>Build useful things. Explain them clearly.</em>
-</p>
