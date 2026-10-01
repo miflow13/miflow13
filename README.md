@@ -2,7 +2,7 @@
 
 # Mika Flowers
 
-### Technical Writer · Software Developer
+### Software Developer · Technical Writer
 
 *Developer documentation · AI/LLMs · Python · TypeScript · Linux · Open Source*
 
